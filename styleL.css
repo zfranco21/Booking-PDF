@@ -1,0 +1,359 @@
+:root{
+    --colorLetras1: white;
+    --detalles: #859fcf;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--colorLetras1);
+}
+
+.signika {
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    font-variation-settings:
+      "GRAD" 0;
+}
+  
+header {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(44,108,173,1) 62%);
+    align-items: center;
+}
+.divmain{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 1% 0 1%
+
+}
+.divone{
+    display: flex;
+    align-items: center;
+}
+.divtwo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.divthree{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+.bg-icon {
+    background-color: white;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+}
+.linkwhite:hover {
+    color: #FFCA42;
+    text-decoration: none;
+}
+.linkwhite:active {
+    color: #FFCA42;
+    text-decoration: none;
+}
+.linkblue:hover {
+    color: white;
+}
+.dif-link{
+    color: #1B3764;
+    background-color: #FFCA42;
+    padding: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 0 16%;
+    margin: 0;
+}
+.intro{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    text-align: left;
+}
+#search-results {
+    display: grid;
+    grid-template-columns: 1fr; /* Crea una sola columna */
+    gap: 20px;
+    justify-items: center;
+    align-items: center; /* Alinea verticalmente */
+}
+
+.intro-text {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+.intro-text p,
+.intro-text h2,
+.intro-text img {
+    margin: 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */    
+    text-align: left;
+}
+.text-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+}
+
+.text-container {
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+hr {
+    width: 100%;
+    color: #1B3764;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+h2 {
+    align-items: center;
+    font-size: 2.5rem;
+}
+.parrafogris{
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle input {
+    display: none;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.menu-toggle input:checked ~ ul.menu {
+    display: block;
+}
+
+.menu-toggle input:checked ~ span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .img1 {
+        display: none;}
+        
+    h1 {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+
+    a{
+        font-size: 15px
+    }
+
+    p{
+        font-size: 10px
+    }
+
+}
+
+/* Estilos adicionales para hacer la página responsive */
+@media screen and (max-width: 768px) {
+    .divmain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divone {
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle ul {
+        display: none;
+    }
+
+    .menu-toggle input:checked ~ ul.menu {
+        display: block;
+    }
+}
+
+.main {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 10px 0px;
+}
+.list {
+    list-style: none;
+    text-align: left;
+}
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffffff;
+}
+
+.parrafogris{
+    color: #6e6b6b;
+}
+
+.blackletter{
+    color: rgb(34, 32, 32);
+}
+
+.stats {
+    font-size: 12px;
+    color: var(--detalles)
+}
+.btnD {
+    color: #1B3764;
+    background-color: #FFCA42;
+    padding: 10px;
+}
+
+.linkwhite:hover {
+    color: #FFCA42;
+    text-decoration: none;
+}
+.linkwhite:active {
+    color: #FFCA42;
+    text-decoration: none;
+}
+.linkblue:hover {
+    color: white;
+}
+.dif-link{
+    color: #1B3764;
+    background-color: #FFCA42;
+    padding: 10px;
+    text-decoration: none;
+}
+.img1,.img2 {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 10%;
+    height: auto;
+
+}
+
+.leer{
+    color: #1B3764;
+    padding: 5px;
+}
+
+.leer:hover{
+    color: #ebb836;
+    padding: 5px;
+}
+
+.leer:active{
+    color: #1B3764;
+    padding: 5px;
+}
+
