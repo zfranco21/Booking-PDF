@@ -163,9 +163,15 @@ h2 {
     }
 
     p{
-        font-size: 10px
+        font-size: 12px
     }
-    .intro {}
+    .stats {
+        font-size: 10px;
+    }
+    .icons {
+        width: 20px;
+        display: inline;
+    }
 }
 
 @media screen and (min-width: 700px) {

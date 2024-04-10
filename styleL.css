@@ -218,9 +218,16 @@ h2 {
     }
 
     p{
-        font-size: 10px
+        font-size: 12px
     }
 
+    .stats {
+        font-size: 10px;
+    }
+    .icons{
+        width: 20px;
+        display: inline;
+    }
 }
 
 /* Estilos adicionales para hacer la página responsive */
